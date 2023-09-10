@@ -1,0 +1,101 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container-nav {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-nav a {
+    margin: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom:2px solid rgb(123, 255, 255) ;
+}
+.container-nav a:hover {
+    transition: 0.5s;
+    color: aquamarine;
+    padding: 10px 10px 7px 10px;
+}
+.container-conteudos {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.container-conteudo {
+    width: 100%;
+}
+.tabela-img img {
+    width: 30%;
+}
+.tabela-img {
+    display: flex;
+    justify-content: center;
+    height: 240px;
+    width: 100%;
+}
+tr:nth-of-type(odd){
+    background-color: rgb(212, 209, 209);
+
+}
+tr:nth-of-type(even){
+    background-color: rgb(240, 240, 240);
+
+}
+thead th {
+    background-color: rgba(98, 238, 238, 0.801);
+    height: 40px;
+    max-width: 120px;
+    text-align: justify;
+    padding-left: 7px;
+    color: white;
+}
+table {
+    width: 70%;
+    height: 100%;
+    border-collapse: collapse;
+}
+td {
+    text-align: justify;
+    padding-left: 7px;
+}
+table, tr, td {
+    border: collapse;
+}
+h1, h2, p {
+    text-align: center;
+    color: grey;
+}
+.info-conteudo {
+    max-width: 600px;
+    margin: 50px auto 20px auto;
+}
+h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+footer p {
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .tabela-img img {
+        display: none;
+    }
+    table {
+        width: 95%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .tabela-img img {
+        display: none;
+    }
+    table td {
+        font-size: 12px;
+    }
+    table {
+        width: 100%;
+    }
+}
